@@ -97,27 +97,27 @@
               a {
                 position: relative;
                 padding: 7px 7px 7px 0;
-                display: flex;
+                display: inline-flex;
                 font-size: 14px;
                 color: #5f5f5f;
-              }
 
-              a::after {
-                position: absolute;
-                bottom: 0;
-                height: 1px;
-                left: 50%;
-                content: "";
-                display: block;
-                background: #000;
-                transition: width 0.3s ease 0s, left 0.3s ease 0s;
-                width: 0;
-              }
+                &::after {
+                  position: absolute;
+                  bottom: 0;
+                  height: 1px;
+                  left: 50%;
+                  content: "";
+                  display: block;
+                  background: #000;
+                  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                  width: 0;
+                }
 
-              a:hover {
-                a::after {
-                  width: 100%;
-                  left: 0;
+                &:hover {
+                  &::after {
+                    width: 100%;
+                    left: 0;
+                  }
                 }
               }
 
