@@ -495,7 +495,7 @@ html, body {
           content: "";
           display: block;
           background: #000;
-          transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          transition: width 0.6s ease 0s, left 0.6s ease 0s;
           width: 0; }
         .header .content .gnb ul .item .menu:hover::after {
           width: 100%;
@@ -512,10 +512,12 @@ html, body {
         .header .content .gnb ul .item .dropdown li a {
           display: inline-flex;
           padding: 20px; }
+          .header .content .gnb ul .item .dropdown li a:hover {
+            font-weight: 600; }
       .header .content .gnb ul .item .row {
         display: flex; }
         .header .content .gnb ul .item .row li {
-          padding: 25px;
+          padding: 40px 25px 40px 25px;
           display: flex;
           flex-direction: column;
           width: 13%; }
@@ -531,19 +533,21 @@ html, body {
             display: inline-flex;
             font-size: 14px;
             color: #5f5f5f; }
+            .header .content .gnb ul .item .row li a:hover {
+              font-weight: 600; }
+              .header .content .gnb ul .item .row li a:hover::after {
+                transform: scale(1); }
             .header .content .gnb ul .item .row li a::after {
+              content: '';
               position: absolute;
-              bottom: 0;
+              bottom: 4px;
+              left: 0;
+              right: 0;
               height: 1px;
-              left: 50%;
-              content: "";
-              display: block;
               background: #000;
-              transition: width 0.3s ease 0s, left 0.3s ease 0s;
-              width: 0; }
-            .header .content .gnb ul .item .row li a:hover::after {
-              width: 100%;
-              left: 0; }
+              transform: scaleX(0);
+              transform-origin: 0 0;
+              transition: 0.3s; }
           .header .content .gnb ul .item .row li .banner .link {
             display: flex;
             flex-direction: column; }
@@ -551,6 +555,10 @@ html, body {
               padding: 15px 0;
               color: #4477be;
               font-weight: 600; }
+    .header .content .utility a {
+      padding: 20px 10px;
+      color: #79a3dc;
+      font-size: 20px; }
 
 body {
   font-family: Roboto, sans-serif; }

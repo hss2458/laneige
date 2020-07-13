@@ -47,7 +47,7 @@
               content: "";
               display: block;
               background: #000;
-              transition: width 0.3s ease 0s, left 0.3s ease 0s;
+              transition: width 0.6s ease 0s, left 0.6s ease 0s;
               width: 0;
             }
 
@@ -73,6 +73,10 @@
               a {
                 display: inline-flex;
                 padding: 20px;
+
+                &:hover {
+                  font-weight: 600;
+                }
               }
             }
           }
@@ -81,7 +85,7 @@
             display: flex;
 
             li {
-              padding: 25px;
+              padding: 40px 25px 40px 25px;
               display: flex;
               flex-direction: column;
               width: 13%;
@@ -100,24 +104,24 @@
                 display: inline-flex;
                 font-size: 14px;
                 color: #5f5f5f;
-
-                &::after {
-                  position: absolute;
-                  bottom: 0;
-                  height: 1px;
-                  left: 50%;
-                  content: "";
-                  display: block;
-                  background: #000;
-                  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-                  width: 0;
+                &:hover {
+                  font-weight: 600;
+                  &::after {
+                    transform: scale(1);
+                  }
                 }
 
-                &:hover {
-                  &::after {
-                    width: 100%;
-                    left: 0;
-                  }
+                &::after {
+                  content: '';
+                  position: absolute;
+                  bottom: 4px;
+                  left: 0;
+                  right: 0;
+                  height: 1px;
+                  background: #000;
+                  transform: scaleX(0);
+                  transform-origin: 0 0;
+                  transition: 0.3s ;
                 }
               }
 
@@ -143,6 +147,14 @@
           }
 
         }
+      }
+    }
+
+    .utility {
+      a {
+        padding: 20px 10px;
+        color: #79a3dc;
+        font-size: 20px;
       }
     }
   }
