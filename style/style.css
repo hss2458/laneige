@@ -458,109 +458,126 @@ html, body {
   padding: 0 15px; }
 
 .header {
-  position: relative;
-  /* 드롭 다운 메뉴 부모 선언 */
-  background: #fff; }
+  position: relative; }
   .header .content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px; }
-    .header .content .logo a {
-      padding: 10px 0;
-      display: flex;
-      width: 130px; }
-    .header .content .gnb ul {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .header .content .gnb ul .item:hover {
-        /* &는 자기 자신에게 css를 줄 수 있음 '.nav-div를 hover했을 때라는 뜻' */ }
-        .header .content .gnb ul .item:hover .dropdown {
-          max-height: 1000px;
-          transition: max-height 2s;
-          border-top: 1px solid #ddd;
-          background: #f7f7f7; }
-      .header .content .gnb ul .item .menu {
-        position: relative;
+    justify-content: space-between; }
+    .header .content .logo {
+      width: 150px; }
+      .header .content .logo a {
         display: flex;
-        align-items: center;
-        padding: 20px;
-        font-size: 18px; }
-        .header .content .gnb ul .item .menu::after {
-          position: absolute;
-          bottom: 0;
-          height: 2px;
-          left: 50%;
-          content: "";
-          display: block;
-          background: #000;
-          transition: width 0.6s ease 0s, left 0.6s ease 0s;
-          width: 0; }
-        .header .content .gnb ul .item .menu:hover::after {
-          width: 100%;
-          left: 0; }
-      .header .content .gnb ul .item .dropdown {
-        align-items: flex-start;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #fff;
-        max-height: 0;
-        overflow: hidden; }
-        .header .content .gnb ul .item .dropdown li a {
-          display: inline-flex;
-          padding: 20px; }
-          .header .content .gnb ul .item .dropdown li a:hover {
-            font-weight: 600; }
-      .header .content .gnb ul .item .row {
+        height: 60px; }
+    .header .content .gnb {
+      display: flex;
+      align-items: center; }
+      .header .content .gnb .nav-item {
         display: flex; }
-        .header .content .gnb ul .item .row li {
-          padding: 40px 25px 40px 25px;
+        .header .content .gnb .nav-item .nav-link:hover {
+          /* &는 자기 자신에게 css를 줄 수 있음 '.nav-div를 hover했을 때라는 뜻' */ }
+          .header .content .gnb .nav-item .nav-link:hover .dropdown {
+            max-height: 1000px;
+            transition: max-height 2s;
+            border-top: 1px solid #ddd; }
+        .header .content .gnb .nav-item .nav-link .menu {
+          position: relative;
           display: flex;
-          flex-direction: column;
-          width: 13%; }
-          .header .content .gnb ul .item .row li .sub-category {
-            padding: 10px 0;
-            margin: 10px 0;
-            font-size: 14px;
-            font-weight: 600;
-            border-bottom: 1px solid #333333; }
-          .header .content .gnb ul .item .row li a {
-            position: relative;
-            padding: 7px 7px 7px 0;
-            display: inline-flex;
-            font-size: 14px;
-            color: #5f5f5f; }
-            .header .content .gnb ul .item .row li a:hover {
-              font-weight: 600; }
-              .header .content .gnb ul .item .row li a:hover::after {
-                transform: scale(1); }
-            .header .content .gnb ul .item .row li a::after {
-              content: '';
-              position: absolute;
-              bottom: 4px;
-              left: 0;
-              right: 0;
-              height: 1px;
-              background: #000;
-              transform: scaleX(0);
-              transform-origin: 0 0;
-              transition: 0.3s; }
-          .header .content .gnb ul .item .row li .banner .link {
+          padding: 20px;
+          font-size: 18px; }
+          .header .content .gnb .nav-item .nav-link .menu::after {
+            position: absolute;
+            bottom: 0;
+            height: 2px;
+            left: 50%;
+            content: "";
+            display: block;
+            background: #000;
+            transition: width 0.6s ease 0s, left 0.6s ease 0s;
+            width: 0; }
+          .header .content .gnb .nav-item .nav-link .menu:hover::after {
+            width: 100%;
+            left: 0; }
+        .header .content .gnb .nav-item .nav-link .dropdown {
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: #f7f7f7;
+          max-height: 0;
+          overflow: hidden; }
+          .header .content .gnb .nav-item .nav-link .dropdown .container {
+            max-width: 1300px; }
+            .header .content .gnb .nav-item .nav-link .dropdown .container ul {
+              display: flex; }
+              .header .content .gnb .nav-item .nav-link .dropdown .container ul li {
+                display: flex; }
+                .header .content .gnb .nav-item .nav-link .dropdown .container ul li a {
+                  padding: 15px; }
+                  .header .content .gnb .nav-item .nav-link .dropdown .container ul li a:hover {
+                    font-weight: 600; }
+        .header .content .gnb .nav-item .nav-link .row {
+          display: flex;
+          justify-content: center; }
+          .header .content .gnb .nav-item .nav-link .row .view-all {
+            width: 100%;
+            padding: 30px 0 0 0; }
+            .header .content .gnb .nav-item .nav-link .row .view-all .all a {
+              font-size: 14px;
+              padding: 0 30px; }
+          .header .content .gnb .nav-item .nav-link .row .row-item {
             display: flex;
-            flex-direction: column; }
-            .header .content .gnb ul .item .row li .banner .link p {
-              padding: 15px 0;
-              color: #4477be;
-              font-weight: 600; }
+            padding: 20px 0 40px 0; }
+            .header .content .gnb .nav-item .nav-link .row .row-item li {
+              display: flex;
+              flex-direction: column;
+              width: 25%;
+              padding: 0 30px; }
+              .header .content .gnb .nav-item .nav-link .row .row-item li .sub-category {
+                padding: 0 0 10px 0;
+                font-size: 15px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                border-bottom: 1px solid #000; }
+              .header .content .gnb .nav-item .nav-link .row .row-item li span .row-link {
+                padding: 7.5px 0;
+                display: flex;
+                font-size: 14px;
+                color: #5f5f5f; }
+            .header .content .gnb .nav-item .nav-link .row .row-item .item-img {
+              width: 40%; }
+            .header .content .gnb .nav-item .nav-link .row .row-item .banner .link {
+              padding: 0 30px; }
+              .header .content .gnb .nav-item .nav-link .row .row-item .banner .link img {
+                display: flex;
+                width: 100%; }
+              .header .content .gnb .nav-item .nav-link .row .row-item .banner .link p {
+                margin: 20px 0 10px;
+                font-size: 14px;
+                color: #5986c5;
+                font-weight: 600; }
+              .header .content .gnb .nav-item .nav-link .row .row-item .banner .link span {
+                display: flex;
+                font-size: 14px; }
     .header .content .utility a {
-      padding: 20px 10px;
-      color: #79a3dc;
-      font-size: 20px; }
+      display: inline-flex;
+      padding: 20px 10px; }
+      .header .content .utility a i {
+        color: #4477be;
+        font-size: 20px; }
 
 body {
   font-family: Roboto, sans-serif; }
+
+.bestseller-bg video {
+  width: 100%;
+  height: auto; }
+
+.visual .slider {
+  width: 100%; }
+  .visual .slider .item video {
+    width: 100%; }
+  .visual .slider .item img {
+    width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
