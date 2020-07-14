@@ -22,7 +22,9 @@
         display: flex;
 
         .nav-link {
-          &:hover { /* &는 자기 자신에게 css를 줄 수 있음 '.nav-div를 hover했을 때라는 뜻' */
+          height: 60px; /* 드롭다운 메뉴 gnb에서 마우스 떼면 사라짐 방지 */
+
+          &:hover {
             .dropdown {
               max-height: 1000px;
               transition: max-height 2s;
@@ -63,6 +65,7 @@
             top: 100%;
             left: 0;
             right: 0;
+            z-index: 10;
             background: #f7f7f7;
             max-height: 0;
             overflow: hidden;

@@ -4,20 +4,53 @@ body {
 .bestseller-bg {
   video {
     width: 100%;
-    height: auto;
   }
 }
 
 .visual {
+
   .slider {
-    width: 100%;
+
     .item {
+      position: relative;
+
       video {
+        height: 800px;
         width: 100%;
+        object-fit: cover;
+      }
+
+      .txt {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+
+        label {
+          padding: 3px 5px 2px;
+          font-size: 12px;
+          text-transform: uppercase;
+          color: #ffffff;
+          background: #e73f3f;
+        }
+        h1 {
+          margin: 20px 0 0 0;
+          font-size: 40px;
+        }
+        p {
+          margin: 25px 0 15px 0;
+          font-size: 22px;
+        }
+        span {
+          font-size: 16px;
+        }
+
       }
 
       img {
+        height: 800px;
         width: 100%;
+        object-fit: cover;
       }
     }
   }
