@@ -1,58 +1,356 @@
 body {
   font-family: Roboto, sans-serif;
 }
-.bestseller-bg {
+.section-visual {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 85vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
   video {
     width: 100%;
+    height: 85vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .slick-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+
+    li {
+      width: 20px;
+      height: 4px;
+      background: rgb(255, 255, 255);
+      margin: 0 6px;
+      transition: 0.4s;
+
+      &.slick-active {
+        background: rgb(120, 185, 247);
+        width: 40px;
+      }
+
+      button {
+        display: none;
+      }
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 70px 20px;
+    cursor: pointer;
+
+    &.slick-prev {
+
+      left: 5%;
+    }
+
+    &.slick-next {
+      right: 5%;
+    }
   }
 }
 
-.visual {
+.bestseller-bg {
+  margin-top: -5px;
 
-  .slider {
+  video {
+    width: 100%;
+    height: 460px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
 
-    .item {
-      position: relative;
+@keyframes effect {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: none;
+  }
+}
 
-      video {
-        height: 800px;
-        width: 100%;
-        object-fit: cover;
-      }
+@keyframes label-effect {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: none;
+  }
+}
 
-      .txt {
-        position: absolute;
-        top: 50%;
-        left: 10%;
-        transform: translateY(-50%);
 
-        label {
-          padding: 3px 5px 2px;
-          font-size: 12px;
-          text-transform: uppercase;
-          color: #ffffff;
-          background: #e73f3f;
+.laneige-bestseller {
+  display: flex;
+  margin-top: -422px;
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  .container {
+    width: 70%;
+
+    h2 {
+      padding: 90px 0 0;
+      text-align: center;
+      font-size: 40px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .product {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+      width: 85%;
+
+      .item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .img {
+          &:hover {
+            img {
+              animation: effect 0.7s;
+            }
+
+            .label {
+              animation: label-effect 0.7s;
+              opacity: 1;
+            }
+          }
+
+          img {
+            width: 320px;
+            transform-origin: bottom center;
+
+          }
+          
+          .label {
+            position: absolute;
+            bottom: 353px;
+            left: 230px;
+            width: 93px;
+            height: 52px;
+            background-image: url("./../images/pickme.png");
+            background-repeat: no-repeat;
+            background-position: 10% 0;
+            opacity: 0;
+            transform-origin: bottom left;
+            transition: 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+          }
         }
-        h1 {
-          margin: 20px 0 0 0;
-          font-size: 40px;
+  
+        .txt {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+  
+          strong {
+            display: flex;
+            margin: 30px 0 0;
+            font-size: 16px;
+            color: #4477be;
+            text-transform: uppercase;
+          }
+  
+          h3 {
+            margin: 10px 0 45px;
+            font-size: 19px;
+          }
+          
+          p {
+            position: relative;
+            margin: 32px 0;
+            font-size: 16px;
+            color: #5f5f5f;
+            text-align: center;
+            line-height: 1.7em;
+            &::before {
+              position: absolute;
+              top: -40px;
+              left: 50%;
+              transform: translateX(-50%);
+              content: "";      /* 가상의 콘텐트 요소를 주면 인라인요소로 생성되므로 박스개념이 없어 이미지가 안뜨게 됨 */
+              display: block;  /* 가상요소에 박스개념을 주어 가로 세로값을 준 후 이미지가 뜨게 함 */
+              width: 36px;
+              height: 32px;
+              background:url("./../images/Snipaste_2020-07-26_13-54-21.png") no-repeat;
+              // scss파일 기준이 아니라 style.css 기준으로 경로를 정해야 이미지가 뜸
+            }
+  
+            span {
+              margin: 5px 0 0;
+              display: flex;
+              justify-content: center;
+              font-size: 14px;
+              color: #9c9b9b;
+            }
+          }
         }
-        p {
-          margin: 25px 0 15px 0;
-          font-size: 22px;
-        }
-        span {
-          font-size: 16px;
-        }
-
-      }
-
-      img {
-        height: 800px;
-        width: 100%;
-        object-fit: cover;
       }
     }
   }
 }
+
+.laneige-banner {
+  margin: 550px 0 200px;
+
+  .container {
+    width: 60%;
+
+    .banner,
+    .banner-layout {
+      display: flex;
+
+      .banner-item {
+        display: flex;
+        margin: 0 25px;
+        width: 33.33%;
+
+        &:nth-child(3) {
+          span {
+            width: 100%;
+          }
+        }
+
+        a {
+          display: flex;
+        }
+
+        .title {
+
+          h3 {
+            padding-left: 20px;
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            margin-left: 0;
+            color: #5483c4;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: .07em;
+            text-align: right;
+            text-transform: uppercase;
+          }
+        }
+
+        .detail {
+          img {
+
+          }
+        }
+
+        p {
+          margin: 17px 0 0;
+          font-size: 19px;
+
+          span {
+            width: 90%;
+            margin-top: 10px;
+            display: flex;
+            color: #5f5f5f;
+            font-size: 14px;
+            line-height: 1.6;
+            letter-spacing: -0.5px;
+          }
+
+        }
+
+      }
+    }
+
+    .banner-layout {
+      display: flex;
+      flex-direction: column;
+
+      .top,
+      .bottom {
+        display: flex;
+      }
+
+      .top {
+        margin: 200px 0 0;
+        .banner-item {
+          flex: 2;
+
+          &:nth-child(2) {
+            flex: 1;
+            margin-top: 55px;
+          }
+
+          a {
+            width: 100%;
+            display: flex;
+
+            .detail {
+              width: 100%;
+              .img {
+                img {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .bottom {
+        margin: 100px 0 200px;
+
+        .banner-item {
+          flex: 1;
+          margin-top: -200px;
+
+          &:nth-child(2) {
+            flex: 2;
+            margin-top: 100px;
+          }
+
+          a {
+            width: 100%;
+            display: flex;
+
+            .detail {
+              width: 100%;
+              .img {
+                img {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+
+
 

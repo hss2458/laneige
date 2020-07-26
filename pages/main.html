@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>portfolio</title>
 
@@ -11,288 +12,520 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
-          rel="stylesheet">
+        rel="stylesheet">
 
     <!--  font awesome cdn  -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
     <!--  google material icons  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--  slick slide  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
 
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+
     <script src="../js/lib/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
 </head>
+
 <body>
-<div id="wrap">
-    <header class="header">
-        <div class="container">
-            <div class="content">
-                <div class="logo">
-                    <a href="#!"><img src="../images/laneige-logo.svg" alt="로고"></a>
-                </div>
+    <div id="wrap">
+        <header class="header">
+            <div class="container">
+                <div class="content">
+                    <div class="logo">
+                        <a href="#!"><img src="../images/laneige-logo.svg" alt="로고"></a>
+                    </div>
 
-                <div class="gnb">
-                    <nav>
-                        <ul class="nav-item">
-                            <li class="nav-link">
-                                <a href="#!" class="menu">브랜드</a>
-                                <div class="dropdown">
-                                    <div class="container">
-                                        <ul>
-                                            <li>
-                                                <a href="#!">브랜드 스토리</a>
-                                                <a href="#!">리필 미 사회공헌 캠페인</a>
-                                                <a href="#!">루미너스 라이브</a>
-                                                <a href="#!">플래그십 스토어</a>
-                                            </li>
-                                        </ul>
+                    <div class="gnb">
+                        <nav>
+                            <ul class="nav-item">
+                                <li class="nav-link">
+                                    <a href="#!" class="menu">브랜드</a>
+                                    <div class="dropdown">
+                                        <div class="container">
+                                            <ul>
+                                                <li>
+                                                    <a href="#!">브랜드 스토리</a>
+                                                    <a href="#!">리필 미 사회공헌 캠페인</a>
+                                                    <a href="#!">루미너스 라이브</a>
+                                                    <a href="#!">플래그십 스토어</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
+                                </li>
 
-                            <li class="nav-link">
-                                <a href="#!" class="menu">베스트&신상품</a>
-                                <div class="dropdown">
-                                    <div class="container">
-                                        <ul>
-                                            <li>
-                                                <a href="#!">신상품</a>
-                                                <a href="#!">어워드 위너</a>
-                                                <a href="#!">베스트셀러</a>
-                                            </li>
-                                        </ul>
+                                <li class="nav-link">
+                                    <a href="#!" class="menu">베스트&신상품</a>
+                                    <div class="dropdown">
+                                        <div class="container">
+                                            <ul>
+                                                <li>
+                                                    <a href="#!">신상품</a>
+                                                    <a href="#!">어워드 위너</a>
+                                                    <a href="#!">베스트셀러</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
+                                </li>
 
-                            <li class="nav-link">
-                                <a href="#!" class="menu">스킨케어</a>
-                                <div class="dropdown row">
-                                    <div class="container">
-                                        <ul class="view-all">
-                                            <li class="all"><a href="#!">전체보기</a></li>
-                                        </ul>
-                                        <ul class="row-item">
-                                            <li>
-                                                <div class="sub-category">유형별</div>
-                                                <span><a href="#!" class="row-link">전체보기</a></span>
-                                                <span><a href="#!" class="row-link">클렌징</a></span>
-                                                <span><a href="#!" class="row-link">스킨/미스트</a></span>
-                                                <span><a href="#!" class="row-link">로션/에멀젼</a></span>
-                                                <span><a href="#!" class="row-link">세럼/에센스</a></span>
-                                                <span><a href="#!" class="row-link">젤/크림</a></span>
-                                                <span><a href="#!" class="row-link">마스크/팩</a></span>
-                                                <span><a href="#!" class="row-link">아이케어</a></span>
-                                                <span><a href="#!" class="row-link">선케어</a></span>
-                                                <span><a href="#!" class="row-link">립케어</a></span>
-                                                <span><a href="#!" class="row-link">기프트세트</a></span>
-                                            </li>
+                                <li class="nav-link">
+                                    <a href="#!" class="menu">스킨케어</a>
+                                    <div class="dropdown row">
+                                        <div class="container">
+                                            <ul class="view-all">
+                                                <li class="all"><a href="#!">전체보기</a></li>
+                                            </ul>
+                                            <ul class="row-item">
+                                                <li>
+                                                    <div class="sub-category">유형별</div>
+                                                    <span><a href="#!" class="row-link">전체보기</a></span>
+                                                    <span><a href="#!" class="row-link">클렌징</a></span>
+                                                    <span><a href="#!" class="row-link">스킨/미스트</a></span>
+                                                    <span><a href="#!" class="row-link">로션/에멀젼</a></span>
+                                                    <span><a href="#!" class="row-link">세럼/에센스</a></span>
+                                                    <span><a href="#!" class="row-link">젤/크림</a></span>
+                                                    <span><a href="#!" class="row-link">마스크/팩</a></span>
+                                                    <span><a href="#!" class="row-link">아이케어</a></span>
+                                                    <span><a href="#!" class="row-link">선케어</a></span>
+                                                    <span><a href="#!" class="row-link">립케어</a></span>
+                                                    <span><a href="#!" class="row-link">기프트세트</a></span>
+                                                </li>
 
-                                            <li>
-                                                <div class="sub-category">고민별</div>
-                                                <span><a href="#!" class="row-link">전체보기</a></span>
-                                                <span><a href="#!" class="row-link">밸런싱</a></span>
-                                                <span><a href="#!" class="row-link">수분/보습</a></span>
-                                                <span><a href="#!" class="row-link">민감/진정</a></span>
-                                                <span><a href="#!" class="row-link">브라이트닝</a></span>
-                                                <span><a href="#!" class="row-link">수분/보습</a></span>
-                                                <span><a href="#!" class="row-link">안티에이징</a></span>
-                                                <span><a href="#!" class="row-link">피지/모공</a></span>
-                                                <span><a href="#!" class="row-link">자외선차단</a></span>
-                                            </li>
+                                                <li>
+                                                    <div class="sub-category">고민별</div>
+                                                    <span><a href="#!" class="row-link">전체보기</a></span>
+                                                    <span><a href="#!" class="row-link">밸런싱</a></span>
+                                                    <span><a href="#!" class="row-link">수분/보습</a></span>
+                                                    <span><a href="#!" class="row-link">민감/진정</a></span>
+                                                    <span><a href="#!" class="row-link">브라이트닝</a></span>
+                                                    <span><a href="#!" class="row-link">수분/보습</a></span>
+                                                    <span><a href="#!" class="row-link">안티에이징</a></span>
+                                                    <span><a href="#!" class="row-link">피지/모공</a></span>
+                                                    <span><a href="#!" class="row-link">자외선차단</a></span>
+                                                </li>
 
-                                            <li>
-                                                <div class="sub-category">라인별</div>
-                                                <span><a href="#!" class="row-link">전체보기</a></span>
-                                                <span><a href="#!" class="row-link">래디언-C</a></span>
-                                                <span><a href="#!" class="row-link">클리어-C</a></span>
-                                                <span><a href="#!" class="row-link">베이직케어</a></span>
-                                                <span><a href="#!" class="row-link">워터뱅크</a></span>
-                                                <span><a href="#!" class="row-link">포커스 액티브 앰플</a></span>
-                                                <span><a href="#!" class="row-link">퍼펙트리뉴</a></span>
-                                                <span><a href="#!" class="row-link">타임프리즈</a></span>
-                                                <span><a href="#!" class="row-link">슬리핑케어</a></span>
-                                                <span><a href="#!" class="row-link">프레시카밍</a></span>
-                                                <span><a href="#!" class="row-link">크림 스킨</a></span>
-                                                <span><a href="#!" class="row-link">화이트듀</a></span>
-                                                <span><a href="#!" class="row-link">기타</a></span>
-                                            </li>
+                                                <li>
+                                                    <div class="sub-category">라인별</div>
+                                                    <span><a href="#!" class="row-link">전체보기</a></span>
+                                                    <span><a href="#!" class="row-link">래디언-C</a></span>
+                                                    <span><a href="#!" class="row-link">클리어-C</a></span>
+                                                    <span><a href="#!" class="row-link">베이직케어</a></span>
+                                                    <span><a href="#!" class="row-link">워터뱅크</a></span>
+                                                    <span><a href="#!" class="row-link">포커스 액티브 앰플</a></span>
+                                                    <span><a href="#!" class="row-link">퍼펙트리뉴</a></span>
+                                                    <span><a href="#!" class="row-link">타임프리즈</a></span>
+                                                    <span><a href="#!" class="row-link">슬리핑케어</a></span>
+                                                    <span><a href="#!" class="row-link">프레시카밍</a></span>
+                                                    <span><a href="#!" class="row-link">크림 스킨</a></span>
+                                                    <span><a href="#!" class="row-link">화이트듀</a></span>
+                                                    <span><a href="#!" class="row-link">기타</a></span>
+                                                </li>
 
-                                            <li class="item-img">
-                                                <div class="banner">
-                                                    <a href="#!" class="link">
-                                                        <img src="../images/global-banner-skincare.jpg" alt="상품이미지">
-                                                        <p>NEW ARRIVAL</p>
-                                                        <span>래디언-C 크림</span>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                                <li class="item-img">
+                                                    <div class="banner">
+                                                        <a href="#!" class="link">
+                                                            <img src="../images/global-banner-skincare.jpg" alt="상품이미지">
+                                                            <p>NEW ARRIVAL</p>
+                                                            <span>래디언-C 크림</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
+                                </li>
 
-                            <li class="nav-link">
-                                <a href="#!" class="menu">메이크업</a>
-                                <div class="dropdown row">
-                                    <div class="container">
-                                        <ul class="view-all">
-                                            <li class="all"><a href="#!">전체보기</a></li>
-                                        </ul>
-                                        <ul class="row-item">
-                                            <li>
-                                                <div class="sub-category">페이스</div>
-                                                <span><a href="#!" class="row-link">전체보기</a></span>
-                                                <span><a href="#!" class="row-link">프라이머/메이크업베이스</a></span>
-                                                <span><a href="#!" class="row-link">파운데이션/컨실러</a></span>
-                                                <span><a href="#!" class="row-link">쿠션</a></span>
-                                                <span><a href="#!" class="row-link">파우더/팩트</a></span>
-                                                <span><a href="#!" class="row-link">하이라이터/블러셔</a></span>
-                                            </li>
+                                <li class="nav-link">
+                                    <a href="#!" class="menu">메이크업</a>
+                                    <div class="dropdown row">
+                                        <div class="container">
+                                            <ul class="view-all">
+                                                <li class="all"><a href="#!">전체보기</a></li>
+                                            </ul>
+                                            <ul class="row-item">
+                                                <li>
+                                                    <div class="sub-category">페이스</div>
+                                                    <span><a href="#!" class="row-link">전체보기</a></span>
+                                                    <span><a href="#!" class="row-link">프라이머/메이크업베이스</a></span>
+                                                    <span><a href="#!" class="row-link">파운데이션/컨실러</a></span>
+                                                    <span><a href="#!" class="row-link">쿠션</a></span>
+                                                    <span><a href="#!" class="row-link">파우더/팩트</a></span>
+                                                    <span><a href="#!" class="row-link">하이라이터/블러셔</a></span>
+                                                </li>
 
-                                            <li>
-                                                <div class="sub-category">아이</div>
-                                                <span><a href="#!" class="row-link">전체보기</a></span>
-                                                <span><a href="#!" class="row-link">아이브로우</a></span>
-                                                <span><a href="#!" class="row-link">아이라이너</a></span>
-                                                <span><a href="#!" class="row-link">마스카라</a></span>
-                                                <span><a href="#!" class="row-link">아이섀도우</a></span>
-                                                <span><a href="#!" class="row-link">소도구</a></span>
-                                            </li>
+                                                <li>
+                                                    <div class="sub-category">아이</div>
+                                                    <span><a href="#!" class="row-link">전체보기</a></span>
+                                                    <span><a href="#!" class="row-link">아이브로우</a></span>
+                                                    <span><a href="#!" class="row-link">아이라이너</a></span>
+                                                    <span><a href="#!" class="row-link">마스카라</a></span>
+                                                    <span><a href="#!" class="row-link">아이섀도우</a></span>
+                                                    <span><a href="#!" class="row-link">소도구</a></span>
+                                                </li>
 
-                                            <li>
-                                                <div class="sub-category">립</div>
-                                                <span><a href="#!" class="row-link">전체보기</a></span>
-                                                <span><a href="#!" class="row-link">립스틱</a></span>
-                                                <span><a href="#!" class="row-link">립틴트</a></span>
-                                                <span><a href="#!" class="row-link">립밤</a></span>
-                                            </li>
+                                                <li>
+                                                    <div class="sub-category">립</div>
+                                                    <span><a href="#!" class="row-link">전체보기</a></span>
+                                                    <span><a href="#!" class="row-link">립스틱</a></span>
+                                                    <span><a href="#!" class="row-link">립틴트</a></span>
+                                                    <span><a href="#!" class="row-link">립밤</a></span>
+                                                </li>
 
-                                            <li class="item-img">
-                                                <div class="banner">
-                                                    <a href="#!" class="link">
-                                                        <img src="../images/20201617_neo_cushion_foundation_category_banner.png" alt="상품이미지">
-                                                        <p>NEW ARRIVAL</p>
-                                                        <span>네오 쿠션 매트</span>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                                <li class="item-img">
+                                                    <div class="banner">
+                                                        <a href="#!" class="link">
+                                                            <img src="../images/20201617_neo_cushion_foundation_category_banner.png"
+                                                                alt="상품이미지">
+                                                            <p>NEW ARRIVAL</p>
+                                                            <span>네오 쿠션 매트</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
+                                </li>
 
-                            <li class="nav-link">
-                                <a href="#!" class="menu">옴므</a>
-                                <div class="dropdown row">
-                                    <div class="container">
-                                        <ul class="view-all">
-                                            <li class="all"><a href="#!">전체보기</a></li>
-                                        </ul>
-                                        <ul class="row-item">
-                                            <li>
-                                                <div class="sub-category">유형별</div>
-                                                <span><a href="#!" class="row-link">전체보기</a></span>
-                                                <span><a href="#!" class="row-link">클렌징</a></span>
-                                                <span><a href="#!" class="row-link">스킨/미스트</a></span>
-                                                <span><a href="#!" class="row-link">로션/에멀젼</a></span>
-                                                <span><a href="#!" class="row-link">크림</a></span>
-                                                <span><a href="#!" class="row-link">선케어</a></span>
-                                                <span><a href="#!" class="row-link">BB</a></span>
-                                                <span><a href="#!" class="row-link">기프트세트</a></span>
-                                            </li>
+                                <li class="nav-link">
+                                    <a href="#!" class="menu">옴므</a>
+                                    <div class="dropdown row">
+                                        <div class="container">
+                                            <ul class="view-all">
+                                                <li class="all"><a href="#!">전체보기</a></li>
+                                            </ul>
+                                            <ul class="row-item">
+                                                <li>
+                                                    <div class="sub-category">유형별</div>
+                                                    <span><a href="#!" class="row-link">전체보기</a></span>
+                                                    <span><a href="#!" class="row-link">클렌징</a></span>
+                                                    <span><a href="#!" class="row-link">스킨/미스트</a></span>
+                                                    <span><a href="#!" class="row-link">로션/에멀젼</a></span>
+                                                    <span><a href="#!" class="row-link">크림</a></span>
+                                                    <span><a href="#!" class="row-link">선케어</a></span>
+                                                    <span><a href="#!" class="row-link">BB</a></span>
+                                                    <span><a href="#!" class="row-link">기프트세트</a></span>
+                                                </li>
 
-                                            <li>
-                                                <div class="sub-category">고민별</div>
-                                                <span><a href="#!" class="row-link">전체보기</a></span>
-                                                <span><a href="#!" class="row-link">수분/보습</a></span>
-                                                <span><a href="#!" class="row-link">피지/모공</a></span>
-                                                <span><a href="#!" class="row-link">마스카라</a></span>
-                                                <span><a href="#!" class="row-link">주름/탄력/보습</a></span>
-                                                <span><a href="#!" class="row-link">자외선차단</a></span>
-                                            </li>
+                                                <li>
+                                                    <div class="sub-category">고민별</div>
+                                                    <span><a href="#!" class="row-link">전체보기</a></span>
+                                                    <span><a href="#!" class="row-link">수분/보습</a></span>
+                                                    <span><a href="#!" class="row-link">피지/모공</a></span>
+                                                    <span><a href="#!" class="row-link">마스카라</a></span>
+                                                    <span><a href="#!" class="row-link">주름/탄력/보습</a></span>
+                                                    <span><a href="#!" class="row-link">자외선차단</a></span>
+                                                </li>
 
-                                            <li>
-                                                <div class="sub-category">라인별</div>
-                                                <span><a href="#!" class="row-link">전체보기</a></span>
-                                                <span><a href="#!" class="row-link">액티브워터</a></span>
-                                                <span><a href="#!" class="row-link">블루에너지</a></span>
-                                                <span><a href="#!" class="row-link">오일컨트롤</a></span>
-                                                <span><a href="#!" class="row-link">크림 스킨</a></span>
-                                                <span><a href="#!" class="row-link">기타</a></span>
-                                            </li>
+                                                <li>
+                                                    <div class="sub-category">라인별</div>
+                                                    <span><a href="#!" class="row-link">전체보기</a></span>
+                                                    <span><a href="#!" class="row-link">액티브워터</a></span>
+                                                    <span><a href="#!" class="row-link">블루에너지</a></span>
+                                                    <span><a href="#!" class="row-link">오일컨트롤</a></span>
+                                                    <span><a href="#!" class="row-link">크림 스킨</a></span>
+                                                    <span><a href="#!" class="row-link">기타</a></span>
+                                                </li>
 
-                                            <li class="item-img">
-                                                <div class="banner">
-                                                    <a href="#!" class="link">
-                                                        <img src="../images/global-banner-homme.jpg" alt="상품이미지">
-                                                        <p>NEW ARRIVAL</p>
-                                                        <span>블루에너지 EX 2종 세트</span>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                                <li class="item-img">
+                                                    <div class="banner">
+                                                        <a href="#!" class="link">
+                                                            <img src="../images/global-banner-homme.jpg" alt="상품이미지">
+                                                            <p>NEW ARRIVAL</p>
+                                                            <span>블루에너지 EX 2종 세트</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
+                                </li>
 
-                            <li class="nav-link">
-                                <a href="#!" class="menu"> 이벤트</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                                <li class="nav-link">
+                                    <a href="#!" class="menu"> 이벤트</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
 
-                <div class="utility">
-                    <a href="#!" class="icon-user"><i class="fa fa-user"></i></a>
-                    <a href="#!" class="icon-location"><i class="fa fa-map-marker-alt"></i></a>
-                    <a href="#!" class="icon-user"><i class="fa fa-search"></i></a>
+                    <div class="utility">
+                        <a href="#!" class="icon-user"><i class="fa fa-user"></i></a>
+                        <a href="#!" class="icon-location"><i class="fa fa-map-marker-alt"></i></a>
+                        <a href="#!" class="icon-user"><i class="fa fa-search"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <main class="main">
-<!--        <div class="bestseller-bg">-->
-<!--            <video src="../video/bestseller-bg.mp4" autoplay muted loop></video>-->
-<!--        </div>-->
+        <main class="main">
 
-        <section class="section visual">
-            <div class="slider">
-                <div class="item">
-                    <a href="#!">
+            <div class="section section-visual">
+                <div class="slider">
+                    <div class="item">
+                        <img src="../images/20200617_neo-cushion_KV_pc_1.png" alt="">
+                    </div>
+                    <div class="item">
                         <video src="../video/Laneige_WBE_Main_PC.mp4" autoplay muted loop></video>
-                        <div class="txt">
-                            <label>best</label>
-                            <h1>워터뱅크 하이드로 에센스</h1>
-                            <p>하이드로 라이트닝™ 기술로 완성되는 수분 광채 피부</p>
-                            <span>#수분광채에센스</span>
-                        </div>
-                    </a>
+                    </div>
+                    <div class="item">
+                        <img src="../images/cream-skin-refiner-main_kv-200424-pc_1.jpg" alt="">
+                    </div>
                 </div>
 
-                <div class="item">
-                    <a href="#!">
-                        <img src="../images/20200617_neo-cushion_KV_pc_1.png" alt="메인이미지">
-                    </a>
+                <div class="slick-arrow slick-prev">
+                    <i class="fa fa-angle-left"></i>
                 </div>
-
-                <div class="item">
-                    <a href="#!">
-                        <img src="../images/cream-skin-refiner-main_kv-200424-pc_1.jpg" alt="메인이미지">
-                    </a>
+                <div class="slick-arrow slick-next">
+                    <i class="fa fa-angle-right"></i>
                 </div>
             </div>
-        </section>
-    </main>
 
-    <footer class="footer">
+            <div class="bestseller-bg">
+                <video src="../video/bestseller-bg.mp4" autoplay muted loop></video>
+            </div>
 
-    </footer>
-</div>
-<script src="../js/script.js"></script>
+            <section class="section laneige-bestseller">
+                <div class="container">
+                    <h2>best seller</h2>
+
+                    <div class="product">
+                        <div class="item">
+                            <a href="#!">
+                                <div class="img">
+                                    <img src="../images/20200325_final_product_cream-skin_pc.png" alt="상품이미지">
+                                    <div class="label"></div>
+                                </div>
+
+                                <div class="txt">
+                                    <strong>Cream Skin Refiner</strong>
+                                    <h3>크림 스킨</h3>
+                                    <p>
+                                        스킨인데 뛰어난 보습지속력과, 산뜻한<br>
+                                        사용감으로 이만한 스킨은 없는 것<br>
+                                        같아요
+                                        <span>@rabb********</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#!">
+                                <div class="img">
+                                    <img src="../images/bestseller-1.png" alt="상품이미지">
+                                    <div class="label"></div>
+                                </div>
+
+                                <div class="txt">
+                                    <strong>Water Sleeping Mask</strong>
+                                    <h3>워터 슬리핑 마스크</h3>
+                                    <p>
+                                        수분감 충만한 슬리핑팩! 밤에 듬뿍<br>
+                                        바르고 자고 일어나면 아침에 화장이<br>
+                                        매우 잘먹는다
+                                        <span>@heat*********</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#!">
+                                <div class="img">
+                                    <img src="../images/bestseller-3.png" alt="상품이미지">
+                                    <div class="label"></div>
+                                </div>
+
+                                <div class="txt">
+                                    <strong>Skin Veil Base</strong>
+                                    <h3>스킨 베일 베이스</h3>
+                                    <p>
+                                        피부 색이 탁해서 베이스를 무조건<br>
+                                        깔아줘야하는 피부였는데 이거<br>
+                                        쓰고나서 정착했어요
+                                        <span>@dpql*****</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section laneige-banner">
+                <div class="container">
+                    <div class="banner">
+                        <div class="banner-item">
+                            <a href="#!">
+                                <div class="title">
+                                    <h3>BRAND STORY</h3>
+                                </div>
+
+                                <div class="detail">
+                                    <div class="img">
+                                        <img src="../images/feature-a-0.jpg" alt="배너이미지">
+                                    </div>
+
+                                    <p>
+                                        루미너스 뷰티
+                                        <span>
+                                            수분 가득 맑고 건강하게 빛나는 아름다움, 루미너스 뷰티
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="banner-item">
+                            <a href="#!">
+                                <div class="title">
+                                    <h3>BRAND STORY</h3>
+                                </div>
+
+                                <div class="detail">
+                                    <div class="img">
+                                        <img src="../images/20201617_neo_cushion_foundation_new-arrivals_01.png"
+                                            alt="배너이미지">
+                                    </div>
+
+                                    <p>
+                                        네오 쿠션_매트
+                                        <span>
+                                            한 번의 터치로 타고난 듯 24시간 완벽하게 커버해주는 매트 쿠션
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="banner-item">
+                            <a href="#!">
+                                <div class="title">
+                                    <h3>BRAND STORY</h3>
+                                </div>
+
+                                <div class="detail">
+                                    <div class="img">
+                                        <img src="../images/feature-a-2.jpg" alt="배너이미지">
+                                    </div>
+
+                                    <p>
+                                        워터 슬리핑 마스크
+                                        <span>
+                                            2019 글로우픽 컨슈머 뷰티어워드 수면팩 부문 1위
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="banner-layout">
+                        <div class="top">
+                            <div class="banner-item">
+                                <a href="#!">
+                                    <div class="title">
+                                        <h3>AWARD WINNER</h3>
+                                    </div>
+
+                                    <div class="detail">
+                                        <div class="img">
+                                            <img src="../images/feature-b-0.jpg" alt="배너이미지">
+                                        </div>
+
+                                        <p>
+                                            스테인드 글로우 립밤
+                                            <span>
+                                                2019 상반기 언파 뷰티리뷰위너스 립밤 부문 1위
+                                            </span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="banner-item">
+                                <a href="#!">
+                                    <div class="title">
+                                        <h3>FLAGSHIP STORE</h3>
+                                    </div>
+
+                                    <div class="detail">
+                                        <div class="img">
+                                            <img src="../images/feature-b-1.jpg" alt="배너이미지">
+                                        </div>
+
+                                        <p>
+                                            MY DELICIOUS THERAPY
+                                            <span>
+                                                세상에 하나뿐인 나만의 '립 슬리핑 마스크' 를 만들어 보세요!
+                                            </span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bottom">
+                            <div class="banner-item">
+                                <a href="#!">
+                                    <div class="title">
+                                        <h3>BEST SELLER</h3>
+                                    </div>
+
+                                    <div class="detail">
+                                        <div class="img">
+                                            <img src="../images/200103-feature-b-2.jpg" alt="배너이미지">
+                                        </div>
+
+                                        <p>
+                                            레이어링 립 바
+                                            <span>
+                                                한 번의 터치로, 리얼 볼륨 그라데이션을 완성하세요.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="banner-item">
+                                <a href="#!">
+                                    <div class="title">
+                                        <h3>campaign</h3>
+                                    </div>
+
+                                    <div class="detail">
+                                        <div class="img">
+                                            <img src="../images/feature-b-3.jpg" alt="배너이미지">
+                                        </div>
+
+                                        <p>
+                                            라네즈 리필 미 캠페인
+                                            <span>
+                                                라네즈는 물을 지키고, 깨끗하게 하는 일을 함께합니다.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="aside sns-photo">
+                <div class="title">
+                    <h2>#LUMINOUS LIVE</h2>
+                    <p>SHARE YOUR LUMINOUS MOMENTS WITH LANEIGE!</p>
+                </div>
+            
+                
+            </aside>
+        </main>
+
+        <footer class="footer">
+
+        </footer>
+    </div>
+    <script src="../js/script.js"></script>
 </body>
-</html>
+
+</html
