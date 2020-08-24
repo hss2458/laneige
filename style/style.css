@@ -927,79 +927,104 @@ body {
 
 .section-visual {
   position: relative;
-}
-
-.section-visual img {
-  width: 100%;
+  min-width: 1920px;
   height: 85vh;
-  -o-object-fit: cover;
-  object-fit: cover;
+  overflow: hidden;
 }
 
-.section-visual video {
-  width: 100%;
-  height: 85vh;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.section-visual .slick-dots {
+.section-visual .slide-item {
   position: absolute;
+  top: 0;
   left: 0;
   right: 0;
-  bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.section-visual .slick-dots li {
-  width: 20px;
-  height: 4px;
-  background: white;
-  margin: 0 6px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+.section-visual .slide-item img {
+  width: 100%;
+  height: 85vh;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
-.section-visual .slick-dots li.slick-active {
-  background: #78b9f7;
-  width: 40px;
+.section-visual .slide-item video {
+  position: absolute;
+  width: 100%;
+  height: 85vh;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
-.section-visual .slick-dots li button {
-  display: none;
+.section-visual .slide-txt {
+  position: relative;
 }
 
-.section-visual .slick-arrow {
+.section-visual .slide-txt div {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
   top: 50%;
+  left: 9%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: 50px;
-  color: #fff;
+  z-index: 1;
+}
+
+.section-visual .slide-txt div h2 {
+  margin: 20px 0 30px 0;
+  font-size: 46px;
+}
+
+.section-visual .slide-txt div p {
+  font-size: 20px;
+}
+
+.section-visual .slide-txt div .hashtag {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.section-visual .slide-txt div span {
+  padding: 3px 5px 2px;
+  font-size: 13px;
+  text-transform: uppercase;
+  background: #f00;
+  color: #ffffff;
+}
+
+.section-visual .btn {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 70px 20px;
   cursor: pointer;
 }
 
-.section-visual .slick-arrow.slick-prev {
-  left: 5%;
+.section-visual .btn span {
+  font-size: 35px;
 }
 
-.section-visual .slick-arrow.slick-next {
-  right: 5%;
+.section-visual .btn .stop-pause {
+  position: relative;
+}
+
+.section-visual .btn .stop-pause .slide-stop {
+  position: absolute;
 }
 
 .bestseller-bg {
+  padding-top: 1000px;
   margin-top: -5px;
 }
 
